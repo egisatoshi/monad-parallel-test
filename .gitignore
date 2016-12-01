@@ -1,0 +1,4 @@
+dist/
+prof/
+.cabal-sandbox
+cabal.sandbox.config

@@ -1,0 +1,22 @@
+Name:                monad-parallel-test
+Version:             1.0.0
+Synopsis:            Monad Parallel Test
+Description:         Monad Parallel Test
+Homepage:            http://www.egison.org/~egi
+License:             MIT
+License-file:        LICENSE
+Author:              Satoshi Egi
+Maintainer:          Satoshi Egi <egi@egison.org>
+Category:            Compilers/Interpreters
+Build-type:          Simple
+Cabal-version:       >=1.8
+
+source-repository head
+  type: git
+  location: https://github.com/egisatoshi/monad-parallel-test
+
+Executable monad-parallel-test
+  Main-is:             Main.hs
+  Build-depends:       base >= 4.0 && < 5, array, random, containers, unordered-containers, haskeline, transformers, mtl, parsec >= 3.0, directory, ghc, ghc-paths, text, regex-tdfa, process, vector, monad-parallel
+  ghc-options:  -O3 -threaded -eventlog -rtsopts
+  ghc-prof-options:   --enable-profiling -auto-all
